@@ -9,6 +9,8 @@ switch(process.platform) {
     case 'win32':
         command = 'explorer.exe';
         break;
+    case 'android':
+        command = 'termux-open-url';
     case 'linux':
         command = 'xdg-open';
         break;
